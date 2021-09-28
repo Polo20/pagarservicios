@@ -1,0 +1,34 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{    
+    text-decoration: none;
+}
+
+.cuadrados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height:50vh;
+    filter: brightness(0.8);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cuadrados:hover{    
+    filter:brightness(1);
+}
+
+@media (max-width: 480px){
+    body div{
+        flex-wrap: wrap;
+    }
+    .cuadrados{
+        height:25vh;
+        width: 100vw;
+    }
+}
